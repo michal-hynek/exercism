@@ -1,6 +1,8 @@
-use std::cmp::Ordering;
+use std::cmp::{Ordering, Ord};
 
-pub fn find(array: &[i32], key: i32) -> Option<usize> {
+pub fn find<T: Ord>(array: impl AsRef<[T]>, key: T) -> Option<usize> {
+    let array = array.as_ref();
+
     let mut left: i32 = 0;
     let mut right: i32 = (array.len() as i32)-1;
 
