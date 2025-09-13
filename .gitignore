@@ -1,4 +1,4 @@
 ./**/target
-./**/.exercism/*
+.exercism
 .busted
 cpp/**/build
