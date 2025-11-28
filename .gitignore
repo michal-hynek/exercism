@@ -2,3 +2,4 @@
 .exercism
 .busted
 cpp/**/build
+c/**/tests.out
